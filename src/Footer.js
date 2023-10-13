@@ -1,11 +1,12 @@
 import React from 'react';
 
-const todaydate=new Date();
+// const todaydate=new Date();
 
-const Footer = () => {
+const Footer = ({length}) => {
   return (
-    <div>Copyright  todays date is &copy; {todaydate.getFullYear()}</div>
+    <p>{length} List {length===1 ? "item":"items"}</p>
+    // <div>Copyright  todays date is &copy {todaydate.getFullYear}</div>
   )
 }
 
-export default Footer
+export default Footer;
